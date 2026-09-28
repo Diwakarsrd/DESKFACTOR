@@ -1,0 +1,8 @@
+SYNTHETIC DATA - NOT A REAL PATIENT
+Patient: Meera Iyer, 62 F. DOB: 04/09/1968.
+Allergies: Penicillin - anaphylaxis (2019).
+Presenting with sore throat and fever 39.2 C for 2 days. HR 122, BP 96/58, SpO2 97%.
+History: No history of hypertension. Currently taking amlodipine 5 mg daily for hypertension.
+Assessment: Streptococcal pharyngitis. Started amoxicillin 500 mg TID for 7 days.
+Patient reports she has been afebrile since admission. Temp charted 39.2 C.
+Note: Cafeteria menu changed to include new vegetarian options next week.

@@ -1,0 +1,8 @@
+SYNTHETIC DATA - NOT A REAL PATIENT
+Patient: Aarav Mehta   Age: 46   Sex: M   MRN: SYN-10021   Visit date: 12 Mar 2026
+Chief complaint: Productive cough and fever for 4 days, mild shortness of breath on exertion.
+History: Type 2 diabetes (metformin 500 mg BD). No known drug allergies.
+Vitals: Temp 38.6 C, HR 104 bpm, BP 128/82 mmHg, RR 22/min, SpO2 94% on room air.
+Exam: Crackles at right lower zone. No wheeze.
+Assessment: Community-acquired pneumonia, right lower lobe.
+Plan: Azithromycin 500 mg OD for 3 days. Chest X-ray ordered. Review in 48 hours.

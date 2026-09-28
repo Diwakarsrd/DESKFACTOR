@@ -1,0 +1,34 @@
+services:
+  # ── Backend API (Render Web Service) ──────────────────────────────
+  - type: web
+    name: clinical-reviewer-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: GROQ_VISION_MODEL
+        value: meta-llama/llama-4-scout-17b-16e-instruct
+      - key: GROQ_API_KEY
+        sync: false          # Set in Render dashboard
+      - key: DATABASE_URL
+        sync: false          # e.g. postgresql://user:pass@host/db (Neon)
+      - key: CORS_ORIGINS
+        sync: false          # e.g. https://your-app.vercel.app
+      - key: MAX_UPLOAD_MB
+        value: "10"
+
+  # ── PostgreSQL Database (if using Render Postgres instead of Neon) ─
+  # Uncomment to provision a managed Postgres instance on Render:
+  # - type: pserv
+  #   name: clinical-reviewer-db
+  #   plan: free
+  #   databaseName: reviewer
+  #   databaseUser: reviewer
